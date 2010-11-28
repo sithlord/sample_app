@@ -1,7 +1,9 @@
-SampleApp::Application.routes.draw do
+SampleApp::Application.routes.draw do |map|
+  get "pages/help"
   get "pages/home"
   get "pages/contact"
   get "pages/about"
+  get "pages/index"
 
 
   # The priority is based upon order of creation:
