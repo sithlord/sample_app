@@ -1,0 +1,11 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<%= "upload.html" %>
+
+  <%= form_for @uploader, :url => {:action => 'create'}, :multipart => true do |f| %>
+    <label for="file">File to Upload</label> <%= f.file_field :image %>
+    <%= submit_tag %>
+  <% end %>

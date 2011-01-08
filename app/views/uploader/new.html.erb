@@ -1,0 +1,14 @@
+<h1>Upload an image</h1>
+
+
+  <%= form_for :uploader, :url => { :action => 'create'}, :html =>  { :multipart => true} do |f| %>
+ <ol class="formList">
+    <!-- Other fields go here... -->
+    <li>
+      <%= f.label :image, "Photo" %>
+      <%= f.file_field :image %>
+    <li>
+      <%= f.submit "Submit" %>
+    </li>
+  </ol>
+<% end %>    
